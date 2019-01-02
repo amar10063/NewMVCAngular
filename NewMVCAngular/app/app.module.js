@@ -12,6 +12,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var location_component_1 = require("./HR/Location/location.component");
 var department_component_1 = require("./HR/Department/department.component");
+var designation_component_1 = require("./HR/Designation/designation.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -21,10 +22,11 @@ var AppModule = /** @class */ (function () {
                     { path: '', redirectTo: 'location', pathMatch: 'full' },
                     { path: 'location', component: location_component_1.LocationComponent },
                     { path: 'department', component: department_component_1.DepartmentComponent },
+                    { path: 'designation', component: department_component_1.DepartmentComponent },
                     { path: '**', redirectTo: 'home' }
                 ])
             ],
-            declarations: [app_component_1.AppComponent, location_component_1.LocationComponent, department_component_1.DepartmentComponent],
+            declarations: [app_component_1.AppComponent, location_component_1.LocationComponent, department_component_1.DepartmentComponent, designation_component_1.DesignationComponent],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

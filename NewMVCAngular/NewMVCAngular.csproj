@@ -172,6 +172,7 @@
   <ItemGroup>
     <Content Include="app\app.component.html" />
     <Content Include="app\HR\Department\department.component.html" />
+    <Content Include="app\HR\Designation\designation.component.html" />
     <Content Include="app\HR\Location\location.component.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -237,6 +238,7 @@
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\HR\Department\department.component.ts" />
+    <TypeScriptCompile Include="app\HR\Designation\designation.component.ts" />
     <TypeScriptCompile Include="app\HR\Location\location.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
   </ItemGroup>
