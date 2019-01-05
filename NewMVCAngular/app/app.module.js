@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var platform_browser_1 = require("@angular/platform-browser");
+var common_1 = require("@angular/common");
 var app_component_1 = require("./app.component");
 var location_component_1 = require("./HR/Location/location.component");
 var department_component_1 = require("./HR/Department/department.component");
@@ -19,13 +20,14 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot([
-                    { path: '', redirectTo: 'location', pathMatch: 'full' },
+                    { path: '', redirectTo: '', pathMatch: 'full' },
                     { path: 'location', component: location_component_1.LocationComponent },
                     { path: 'department', component: department_component_1.DepartmentComponent },
                     { path: 'designation', component: department_component_1.DepartmentComponent },
                     { path: '**', redirectTo: 'home' }
                 ])
             ],
+            providers: [{ provide: common_1.LocationStrategy, useClass: common_1.HashLocationStrategy }],
             declarations: [app_component_1.AppComponent, location_component_1.LocationComponent, department_component_1.DepartmentComponent, designation_component_1.DesignationComponent],
             bootstrap: [app_component_1.AppComponent]
         })
